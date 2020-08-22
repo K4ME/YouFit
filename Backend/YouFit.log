@@ -1,0 +1,11 @@
+2020-08-17T02:10:58.526Z [YouFit] info: API started!
+2020-08-22T00:10:25.651Z [YouFit] info: API started!
+2020-08-22T00:12:51.607Z [YouFit] info: GET /user
+2020-08-22T00:13:02.900Z [YouFit] info: GET /user/login - " NaN
+2020-08-22T00:13:02.981Z [YouFit] info: GET /trainer/:id
+2020-08-22T00:13:14.554Z [YouFit] info: PUT /user/likes/:id/ - " {"id":2,"name":"Guilherme","email":"guilherme@hotmail.com","password":"password","phone":"9999999999","adress":"Rua 42","biograph":"busco treinadores para academia.","likes":["1","2","3","4"],"dislikes":[]}
+2020-08-22T00:13:16.729Z [YouFit] info: GET /user
+2020-08-22T00:13:21.968Z [YouFit] info: GET /trainer/:id
+2020-08-22T00:13:29.361Z [YouFit] info: GET /trainer/:id
+2020-08-22T00:22:22.385Z [YouFit] info: GET /trainer/:id
+2020-08-22T00:32:51.945Z [YouFit] info: GET /trainer/:id
