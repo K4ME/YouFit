@@ -28,7 +28,7 @@ export default function Login({ history }) {
 
   async function handleButton(event) {
     event.preventDefault();
-    history.push(`/register`);
+    history.push(`/registerTrainer`);
   }
 
   return (

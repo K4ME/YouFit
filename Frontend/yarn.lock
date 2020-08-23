@@ -8801,6 +8801,13 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-materialize@^3.9.2:
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/react-materialize/-/react-materialize-3.9.2.tgz#dab18c7b0c34964b8ac4fe41e54c3107dac87145"
+  integrity sha512-6Km62FMXmpoIDOYMZXth3yPeyYZMN1P6duo1pKTHOdHUYdzI9ua4PbGJUbUC/BiVmm4lHPV5uI96tv3toRND6Q==
+  dependencies:
+    classnames "^2.2.6"
+
 react-radio-buttons@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/react-radio-buttons/-/react-radio-buttons-1.2.2.tgz#9c07a0cfacc9fd4927fa9ed96392e93b600614a9"

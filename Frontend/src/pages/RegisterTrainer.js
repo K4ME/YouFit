@@ -26,20 +26,8 @@ export default function Login({ history }) {
     if (password !== confirmPassword) {
       toast.error("Senhas não conferem!");
     }
-    if (register === "Student" && password === confirmPassword) {
-      const response = await api.post("/user/create/", {
-        email: email,
-        password: password,
-        name: name,
-        phone: phone,
-        biograph: biograph,
-        adress: adress,
-        trainer: "",
-      });
-      history.push(`/login`);
-    }
 
-    if (register === "Trainer" && password === confirmPassword) {
+    if (password === confirmPassword) {
       const response = await api.post("/trainer/create/", {
         email: email,
         password: password,
@@ -48,7 +36,7 @@ export default function Login({ history }) {
         biograph: biograph,
         adress: adress,
       });
-      history.push(`/main`);
+      history.push(`/loginTrainer`);
     }
   }
 
@@ -94,25 +82,6 @@ export default function Login({ history }) {
           value={confirmPassword}
           onChange={(event) => setConfirmPassword(event.target.value)}
         />
-        <br />
-        <div className="container-radio-button">
-          <Radio.Group value={register}>
-            <Radio
-              value="Student"
-              checked={register === "Student"}
-              onClick={() => setRegister("Student")}
-            >
-              Aluno
-            </Radio>
-            <Radio
-              value="Trainer"
-              checked={register === "Trainer"}
-              onClick={() => setRegister("Trainer")}
-            >
-              Trainador
-            </Radio>
-          </Radio.Group>
-        </div>
         <br />
         <button type="submit">Enviar</button>
       </form>

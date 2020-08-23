@@ -7,7 +7,8 @@ import "./Main.css";
 import logo from "../assets/YouFit.svg";
 import usuario from "../assets/usuario.svg";
 import like from "../assets/like.svg";
-import dislike from "../assets/dislike.svg";
+import whatsappIcon from "../assets/whatsapp.svg";
+
 //import itsamatch from "../assets/itsamatch.png";
 import api from "../services/api";
 
@@ -37,7 +38,7 @@ export default function Main({ match }) {
 */
 
   async function handleLike(id) {
-    await api.put(`/user/likes/${id}`, {
+    await api.put(`/addstudent/${id}`, {
       studentId: match.params.id,
     });
 
@@ -71,8 +72,13 @@ export default function Main({ match }) {
               </footer>
 
               <div className="buttons">
-                <button type="button" onClick={() => handleDislike(trainer.id)}>
-                  <img src={dislike} alt="Dislike" />
+                <button type="button">
+                  <a
+                    target="_blank"
+                    href={`https://wa.me/${trainer.phone}?text=Fomos%20conectados!%20Que%20tipo%20de%20treino%20deseja?`}
+                  >
+                    <img src={whatsappIcon} alt="Whatsapp" />
+                  </a>
                 </button>
 
                 <button type="button" onClick={() => handleLike(trainer.id)}>

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import logoImg from "../assets/YouFit.svg";
 import landingImg from "../assets/landing2.jpg";
-import purpleHeart from "../assets/purple-heart.svg";
 
 import "./Landing.css";
 import api from "../services/api";
@@ -20,19 +19,15 @@ function Landing() {
           </h2>
         </div>
 
-        <img
-          src={landingImg}
-          alt="Plataforma de estudos"
-          className="hero-image"
-        />
+        <img src={landingImg} alt="Pessoas treinando" className="hero-image" />
 
         <div className="buttons-container">
-          <Link to="/" className="study">
-            Treinar
+          <Link to="/login" className="study">
+            Alunos
           </Link>
 
           <Link to="/loginTrainer" className="give-classes">
-            Dar treinos
+            Treinadores
           </Link>
         </div>
       </div>
