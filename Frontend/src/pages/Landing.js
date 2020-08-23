@@ -28,11 +28,11 @@ function Landing() {
 
         <div className="buttons-container">
           <Link to="/" className="study">
-            Entrar
+            Treinar
           </Link>
 
-          <Link to="/register" className="give-classes">
-            Criar nova conta
+          <Link to="/loginTrainer" className="give-classes">
+            Dar treinos
           </Link>
         </div>
       </div>

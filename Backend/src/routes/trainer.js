@@ -210,4 +210,31 @@ router.put("/addstudent/:id/", async (req, res) => {
   }
 });
 
+//login
+router.post("/login", async (req, res) => {
+  try {
+    const data = JSON.parse(await readFile(global.fileName, "utf8"));
+    delete data.nextId;
+    delete data.nextTrainerId;
+
+    const { email, password } = req.body;
+
+    data.trainer = data.trainer.filter(
+      (us) => us.email === email && us.password === password
+    );
+
+    if (data.trainer == "") {
+      res.send("erro");
+    } else {
+      const trainerId = JSON.stringify(data.trainer[0].id);
+
+      console.log(data.trainer);
+      res.send(trainerId);
+    }
+    logger.info(`GET /user/login - " ${email - password}`);
+  } catch (err) {
+    res.status(400).send({ error: err.message });
+  }
+});
+
 export default router;

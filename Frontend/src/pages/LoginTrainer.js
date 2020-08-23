@@ -17,14 +17,12 @@ export default function Login({ history }) {
   async function handleSubmit(event) {
     event.preventDefault();
 
-    const response = await api.post("/user/login", {
+    const response = await api.post("/trainer/login", {
       email: email,
       password: password,
     });
 
-    // console.log(response.data);  é o ID do usuário
-
-    if (response.data !== "erro") history.push(`/main/${response.data}`);
+    if (response.data !== "erro") history.push(`/mainTrainer/${response.data}`);
     if (response.data === "erro") toast.error("Usuário ou senha não conferem!");
   }
 

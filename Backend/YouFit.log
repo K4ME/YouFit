@@ -9,3 +9,47 @@
 2020-08-22T00:13:29.361Z [YouFit] info: GET /trainer/:id
 2020-08-22T00:22:22.385Z [YouFit] info: GET /trainer/:id
 2020-08-22T00:32:51.945Z [YouFit] info: GET /trainer/:id
+2020-08-22T15:59:15.784Z [YouFit] info: API started!
+2020-08-22T15:59:38.773Z [YouFit] info: GET /trainer/:id
+2020-08-22T17:26:11.922Z [YouFit] info: API started!
+2020-08-22T17:26:23.412Z [YouFit] info: GET /trainer/:id
+2020-08-22T17:31:02.120Z [YouFit] info: API started!
+2020-08-22T17:32:54.396Z [YouFit] info: GET /user/login - " NaN
+2020-08-22T17:52:49.733Z [YouFit] info: GET /user/login - " NaN
+2020-08-22T17:52:49.802Z [YouFit] info: GET /trainer/:id
+2020-08-22T17:59:40.949Z [YouFit] info: GET /user/consult/:id - " 2
+2020-08-22T18:00:10.901Z [YouFit] info: GET /user/login - " NaN
+2020-08-22T18:00:10.962Z [YouFit] info: GET /trainer/:id
+2020-08-22T18:01:49.370Z [YouFit] info: GET /trainer/:id
+2020-08-22T18:02:44.646Z [YouFit] info: PUT /trainer/update/ - " {"id":1,"name":"Pedro","email":"Pedro@gmail.com","password":"Pedro","phone":"169999999999","adress":"rua 42","biograph":"Treinador especializado em natação para atletas de auto rendimento.","students":["gustavo"]}
+2020-08-22T18:02:49.677Z [YouFit] info: GET /trainer/:id
+2020-08-22T18:06:16.707Z [YouFit] info: GET /trainer/:id
+2020-08-22T18:06:22.453Z [YouFit] info: GET /trainer
+2020-08-22T18:06:58.679Z [YouFit] info: GET /trainer/:id
+2020-08-22T18:10:03.298Z [YouFit] info: GET /user
+2020-08-22T18:49:38.570Z [YouFit] info: GET /user
+2020-08-22T19:13:19.466Z [YouFit] info: API started!
+2020-08-22T19:29:48.128Z [YouFit] info: API started!
+2020-08-22T19:34:25.620Z [YouFit] info: API started!
+2020-08-22T19:34:59.251Z [YouFit] info: API started!
+2020-08-22T19:35:22.006Z [YouFit] info: GET /:id
+2020-08-22T19:35:29.566Z [YouFit] info: GET /user
+2020-08-22T19:35:43.727Z [YouFit] info: GET /trainer/:id
+2020-08-22T19:44:38.063Z [YouFit] info: GET /trainer/:id
+2020-08-22T19:44:40.018Z [YouFit] info: GET /trainer/:id
+2020-08-22T19:44:55.307Z [YouFit] info: GET /user/login - " NaN
+2020-08-22T19:44:55.386Z [YouFit] info: GET /trainer/:id
+2020-08-22T19:45:46.530Z [YouFit] info: GET /trainer/:id
+2020-08-22T19:46:05.295Z [YouFit] info: GET /user
+2020-08-22T19:46:13.700Z [YouFit] info: GET /:id
+2020-08-22T19:46:29.851Z [YouFit] info: GET /:id
+2020-08-22T19:46:36.515Z [YouFit] info: GET /:id
+2020-08-22T19:46:41.586Z [YouFit] info: GET /user
+2020-08-22T19:47:03.966Z [YouFit] info: GET /trainer/:id
+2020-08-22T19:47:35.719Z [YouFit] info: GET /user/login - " NaN
+2020-08-22T19:49:01.638Z [YouFit] info: GET /user
+2020-08-22T19:50:08.581Z [YouFit] info: GET /:id
+2020-08-22T19:50:19.498Z [YouFit] info: GET /:id
+2020-08-22T19:50:31.995Z [YouFit] info: GET /user
+2020-08-22T19:52:58.087Z [YouFit] info: GET /:id
+2020-08-22T19:53:06.164Z [YouFit] info: GET /:id

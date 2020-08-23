@@ -59,6 +59,38 @@ router.get("/", async (req, res) => {
   }
 });
 
+//retornar alunos que deram like no treinador
+router.get("/:id", async (req, res) => {
+  try {
+    const data = JSON.parse(await readFile(global.fileName, "utf8"));
+    const dataUsers = data.user;
+    delete dataUsers.nextId;
+    delete dataUsers.nextTrainerId;
+
+    const idReq = parseInt(req.params.id, 10);
+    //const likes = data.user[idReq - 1].likes; //retorna a lista de likes do usuario
+
+    let Alunos = []; //users que deram like no treinador
+
+    function imprimir(item, indice) {
+      for (var i = 0; i < item.likes.length; i++) {
+        if (idReq == item.likes[i]) {
+          if (Alunos == null) Alunos = [dataUsers[indice]];
+          if (Alunos != null) Alunos = [...Alunos, dataUsers[indice]];
+        }
+      }
+    }
+
+    dataUsers.forEach(imprimir);
+
+    res.send(Alunos);
+
+    logger.info("GET /:id");
+  } catch (err) {
+    res.status(400).send({ error: err.message });
+  }
+});
+
 // Mostrar usuário por ID
 router.get("/consult/:id", async (req, res) => {
   try {
