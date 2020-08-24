@@ -3,8 +3,7 @@ import { RadioGroup, RadioButton } from "react-radio-buttons";
 import "./Register.css";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
-import "antd/dist/antd.css";
-import { Radio } from "antd";
+
 //import api from "../services/api.js";
 
 import logo from "../assets/YouFit.svg";

@@ -80,3 +80,172 @@
 2020-08-23T18:26:23.387Z [YouFit] info: GET /trainer
 2020-08-23T18:36:09.687Z [YouFit] info: GET /:id
 2020-08-23T18:37:32.980Z [YouFit] info: GET /:id
+2020-08-23T19:51:20.707Z [YouFit] info: GET /:id
+2020-08-23T19:57:00.075Z [YouFit] info: GET /:id
+2020-08-23T20:27:42.481Z [YouFit] info: GET /user/login - " NaN
+2020-08-23T20:27:42.551Z [YouFit] info: GET /trainer/:id
+2020-08-23T20:29:06.053Z [YouFit] info: PUT /user/dislikes/:id/ - " {"id":2,"name":"Guilherme","email":"guilherme@hotmail.com","password":"password","phone":"9999999999","adress":"Rua 42","biograph":"busco treinadores para academia.","likes":["1","2","3","4"],"dislikes":["5"]}
+2020-08-23T20:29:08.383Z [YouFit] info: GET /trainer/:id
+2020-08-23T20:29:23.564Z [YouFit] info: PUT /user/dislikes/:id/ - " {"id":2,"name":"Guilherme","email":"guilherme@hotmail.com","password":"password","phone":"9999999999","adress":"Rua 42","biograph":"busco treinadores para academia.","likes":["1","2","3","4"],"dislikes":["5","5"]}
+2020-08-23T20:56:55.830Z [YouFit] info: GET /trainer/:id
+2020-08-23T20:57:44.972Z [YouFit] info: GET /trainer/:id
+2020-08-23T21:07:50.424Z [YouFit] info: GET /trainer/:id
+2020-08-23T21:09:49.503Z [YouFit] info: GET /trainer/:id
+2020-08-23T21:11:38.604Z [YouFit] info: API started!
+2020-08-23T21:12:41.738Z [YouFit] info: GET /user
+2020-08-23T21:14:19.732Z [YouFit] info: GET /user/login - " NaN
+2020-08-23T21:14:19.776Z [YouFit] info: GET /:id
+2020-08-23T21:21:16.984Z [YouFit] info: GET /:id
+2020-08-23T21:21:49.094Z [YouFit] info: GET /:id
+2020-08-23T21:22:13.774Z [YouFit] info: GET /:id
+2020-08-23T21:22:24.558Z [YouFit] info: GET /:id
+2020-08-23T21:23:10.490Z [YouFit] info: GET /user/login - " NaN
+2020-08-23T21:23:10.566Z [YouFit] info: GET /trainer/:id
+2020-08-23T21:23:23.303Z [YouFit] info: PUT /user/likes/:id/ - " {"id":1,"avatar":"","name":"Gustavo","email":"gustavo@hotmail.com","password":"password","phone":"9999999999","adress":"Rua 42","biograph":"busco treinadores.","likes":["1"],"dislikes":["2","2","2","2"]}
+2020-08-23T21:23:25.687Z [YouFit] info: GET /trainer/:id
+2020-08-23T21:23:40.106Z [YouFit] info: GET /user/login - " NaN
+2020-08-23T21:23:40.156Z [YouFit] info: GET /:id
+2020-08-23T21:26:11.118Z [YouFit] info: GET /:id
+2020-08-23T21:32:01.355Z [YouFit] info: GET /:id
+2020-08-23T21:32:45.883Z [YouFit] info: GET /:id
+2020-08-23T21:35:47.865Z [YouFit] info: GET /:id
+2020-08-23T21:37:00.055Z [YouFit] info: GET /:id
+2020-08-23T21:42:17.140Z [YouFit] info: GET /:id
+2020-08-23T21:44:44.136Z [YouFit] info: GET /:id
+2020-08-23T21:45:06.778Z [YouFit] info: GET /:id
+2020-08-23T21:45:20.593Z [YouFit] info: GET /:id
+2020-08-23T21:45:24.675Z [YouFit] info: GET /:id
+2020-08-23T21:45:38.761Z [YouFit] info: GET /:id
+2020-08-23T21:45:51.961Z [YouFit] info: GET /:id
+2020-08-23T21:51:09.165Z [YouFit] info: API started!
+2020-08-23T21:52:59.492Z [YouFit] info: GET /trainer/:id
+2020-08-23T22:06:11.656Z [YouFit] info: GET /trainer/:id
+2020-08-23T22:06:23.492Z [YouFit] info: GET /:id
+2020-08-23T22:11:10.916Z [YouFit] info: GET /user/login - " NaN
+2020-08-23T22:11:11.032Z [YouFit] info: GET /trainer/:id
+2020-08-23T22:11:48.168Z [YouFit] info: GET /:id
+2020-08-23T23:25:37.540Z [YouFit] info: GET /trainer/:id
+2020-08-23T23:25:43.749Z [YouFit] info: GET /trainer/:id
+2020-08-23T23:25:50.533Z [YouFit] info: GET /:id
+2020-08-23T23:59:43.709Z [YouFit] info: GET /trainer
+2020-08-24T00:09:45.995Z [YouFit] info: API started!
+2020-08-24T00:11:03.025Z [YouFit] info: GET /:id
+2020-08-24T00:11:11.292Z [YouFit] info: POST /trainer/create - {"id":7,"name":"Karen","email":"Karen@gmail.com","password":"Karen","phone":"169999999999","adress":"rua 42","biograph":"Formada a pouco tempo na faculdade, busca adquirir experiência.","students":[],"likes":[]}
+2020-08-24T00:11:17.432Z [YouFit] info: GET /trainer
+2020-08-24T00:15:08.031Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":1,"avatar":"","name":"Pedro","email":"Pedro@gmail.com","password":"Pedro","phone":"169999999999","adress":"rua 42","biograph":"Treinador especializado em natação para atletas de auto rendimento.","students":["gustavo","gustavo"]}
+2020-08-24T00:15:11.670Z [YouFit] info: GET /trainer
+2020-08-24T00:16:40.245Z [YouFit] info: GET /trainer
+2020-08-24T00:19:40.728Z [YouFit] info: GET /:id
+2020-08-24T00:22:14.837Z [YouFit] info: GET /:id
+2020-08-24T00:22:36.260Z [YouFit] info: GET /trainer/:id
+2020-08-24T00:22:47.045Z [YouFit] info: GET /trainer
+2020-08-24T00:22:56.879Z [YouFit] info: GET /trainer
+2020-08-24T00:24:22.572Z [YouFit] info: GET /trainer
+2020-08-24T00:24:34.300Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":1,"avatar":"","name":"Pedro","email":"Pedro@gmail.com","password":"Pedro","phone":"169999999999","adress":"rua 42","biograph":"Treinador especializado em natação para atletas de auto rendimento.","students":["gustavo"]}
+2020-08-24T00:24:40.291Z [YouFit] info: GET /trainer
+2020-08-24T00:28:02.251Z [YouFit] info: GET /:id
+2020-08-24T00:28:09.326Z [YouFit] info: GET /trainer
+2020-08-24T00:31:53.917Z [YouFit] info: GET /:id
+2020-08-24T00:31:56.134Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":2,"avatar":"","name":"Marcos","email":"Marcos@gmail.com","password":"Marcos","phone":"169999999999","adress":"rua 42","biograph":"Coach de Fisiculturismo.","students":["Guilherme"]}
+2020-08-24T00:32:02.043Z [YouFit] info: GET /trainer
+2020-08-24T00:35:00.361Z [YouFit] info: GET /:id
+2020-08-24T00:38:41.394Z [YouFit] info: GET /:id
+2020-08-24T00:38:43.884Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":2,"avatar":"","name":"Marcos","email":"Marcos@gmail.com","password":"Marcos","phone":"169999999999","adress":"rua 42","biograph":"Coach de Fisiculturismo.","students":["Guilherme","Guilherme"]}
+2020-08-24T00:38:48.228Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":2,"avatar":"","name":"Marcos","email":"Marcos@gmail.com","password":"Marcos","phone":"169999999999","adress":"rua 42","biograph":"Coach de Fisiculturismo.","students":["Guilherme","Guilherme","Guilherme"]}
+2020-08-24T00:38:49.375Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":2,"avatar":"","name":"Marcos","email":"Marcos@gmail.com","password":"Marcos","phone":"169999999999","adress":"rua 42","biograph":"Coach de Fisiculturismo.","students":["Guilherme","Guilherme","Guilherme","Guilherme"]}
+2020-08-24T00:39:16.270Z [YouFit] info: GET /trainer
+2020-08-24T00:59:56.989Z [YouFit] info: API started!
+2020-08-24T01:02:51.075Z [YouFit] info: API started!
+2020-08-24T01:04:21.055Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:04:27.004Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:04:39.225Z [YouFit] info: GET /trainer
+2020-08-24T01:04:47.128Z [YouFit] info: GET /:id
+2020-08-24T01:04:49.983Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":2,"avatar":"","name":"Marcos","email":"Marcos@gmail.com","password":"Marcos","phone":"169999999999","adress":"rua 42","biograph":"Coach de Fisiculturismo.","students":["Guilherme"]}
+2020-08-24T01:04:53.470Z [YouFit] info: GET /trainer
+2020-08-24T01:04:57.737Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:05:02.791Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:05:06.534Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:05:34.466Z [YouFit] info: GET /trainer
+2020-08-24T01:06:05.850Z [YouFit] info: GET /:id
+2020-08-24T01:06:10.334Z [YouFit] info: GET /trainer
+2020-08-24T01:06:17.699Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":1,"avatar":"","name":"Pedro","email":"Pedro@gmail.com","password":"Pedro","phone":"169999999999","adress":"rua 42","biograph":"Treinador especializado em natação para atletas de auto rendimento.","students":["Guilherme"]}
+2020-08-24T01:06:28.393Z [YouFit] info: GET /trainer
+2020-08-24T01:06:35.560Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:06:36.473Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:11:57.852Z [YouFit] info: GET /:id
+2020-08-24T01:12:00.052Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:13:07.754Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:13:09.245Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:16:04.905Z [YouFit] info: GET /:id
+2020-08-24T01:18:48.283Z [YouFit] info: API started!
+2020-08-24T01:18:55.146Z [YouFit] info: GET /trainer
+2020-08-24T01:19:01.882Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":1,"avatar":"","name":"Pedro","email":"Pedro@gmail.com","password":"Pedro","phone":"169999999999","adress":"rua 42","biograph":"Treinador especializado em natação para atletas de auto rendimento.","students":["2","2"]}
+2020-08-24T01:19:05.511Z [YouFit] info: GET /trainer
+2020-08-24T01:19:10.323Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":1,"avatar":"","name":"Pedro","email":"Pedro@gmail.com","password":"Pedro","phone":"169999999999","adress":"rua 42","biograph":"Treinador especializado em natação para atletas de auto rendimento.","students":["2","2","1"]}
+2020-08-24T01:19:11.406Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":1,"avatar":"","name":"Pedro","email":"Pedro@gmail.com","password":"Pedro","phone":"169999999999","adress":"rua 42","biograph":"Treinador especializado em natação para atletas de auto rendimento.","students":["2","2","1","1"]}
+2020-08-24T01:19:12.839Z [YouFit] info: GET /trainer
+2020-08-24T01:20:07.398Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:20:17.753Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:22:45.700Z [YouFit] info: API started!
+2020-08-24T01:23:39.965Z [YouFit] info: API started!
+2020-08-24T01:23:44.591Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:23:59.587Z [YouFit] info: API started!
+2020-08-24T01:24:01.800Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:24:04.852Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:27:51.790Z [YouFit] info: API started!
+2020-08-24T01:27:58.336Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:29:38.468Z [YouFit] info: API started!
+2020-08-24T01:29:45.107Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:30:41.222Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:34:08.722Z [YouFit] info: API started!
+2020-08-24T01:34:13.363Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:34:17.167Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:34:19.857Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:38:41.509Z [YouFit] info: GET /:id
+2020-08-24T01:38:48.065Z [YouFit] info: GET /:id
+2020-08-24T01:38:56.695Z [YouFit] info: GET /:id
+2020-08-24T01:39:17.368Z [YouFit] info: GET /trainer/:id
+2020-08-24T01:39:55.629Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:39:59.983Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:40:47.373Z [YouFit] info: GET /user/login - " NaN
+2020-08-24T01:40:53.935Z [YouFit] info: GET /user/login - " NaN
+2020-08-24T01:40:54.005Z [YouFit] info: GET /trainer/:id
+2020-08-24T01:42:24.833Z [YouFit] info: GET /trainer/:id
+2020-08-24T01:42:38.334Z [YouFit] info: GET /:id
+2020-08-24T01:43:55.291Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:44:49.225Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:47:26.052Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:50:06.621Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:51:56.681Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:57:10.105Z [YouFit] info: GET /trainer/:id
+2020-08-24T01:58:15.743Z [YouFit] info: GET /trainer/:id
+2020-08-24T01:58:55.659Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T01:58:59.532Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:00:29.359Z [YouFit] info: GET /:id
+2020-08-24T02:01:12.714Z [YouFit] info: GET /trainer/:id
+2020-08-24T02:01:22.714Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:04:55.792Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:06:53.640Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:06:58.352Z [YouFit] info: GET /trainer/:id
+2020-08-24T02:07:09.397Z [YouFit] info: GET /:id
+2020-08-24T02:07:27.107Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":2,"avatar":"","name":"Marcos","email":"Marcos@gmail.com","password":"Marcos","phone":"169999999999","adress":"rua 42","biograph":"Coach de Fisiculturismo.","students":["2"]}
+2020-08-24T02:07:30.973Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":2,"avatar":"","name":"Marcos","email":"Marcos@gmail.com","password":"Marcos","phone":"169999999999","adress":"rua 42","biograph":"Coach de Fisiculturismo.","students":["2","2"]}
+2020-08-24T02:07:32.439Z [YouFit] info: PUT /trainer/addstudent/:id - " {"id":2,"avatar":"","name":"Marcos","email":"Marcos@gmail.com","password":"Marcos","phone":"169999999999","adress":"rua 42","biograph":"Coach de Fisiculturismo.","students":["2","2","2"]}
+2020-08-24T02:09:25.278Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:09:38.941Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:11:20.206Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:20:24.278Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:20:31.206Z [YouFit] info: GET /trainer/:id
+2020-08-24T02:26:42.793Z [YouFit] info: GET /trainer/:id
+2020-08-24T02:29:01.483Z [YouFit] info: GET /trainer/:id
+2020-08-24T02:33:59.815Z [YouFit] info: GET /trainer/:id
+2020-08-24T02:34:30.285Z [YouFit] info: GET /trainer/:id
+2020-08-24T02:34:31.986Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:37:29.765Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:37:33.343Z [YouFit] info: GET /trainer/:id
+2020-08-24T02:37:34.819Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:37:36.195Z [YouFit] info: GET /trainer/:id
+2020-08-24T02:40:23.494Z [YouFit] info: GET /trainer/:id
+2020-08-24T02:40:25.146Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-24T02:40:26.751Z [YouFit] info: GET /trainer/:id
+2020-08-24T02:40:39.535Z [YouFit] info: GET /trainer/:id

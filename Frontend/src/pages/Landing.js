@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import logoImg from "../assets/YouFit.svg";
-import landingImg from "../assets/landing2.jpg";
+import landingImg from "../assets/landing2.png";
 
 import "./Landing.css";
 import api from "../services/api";
@@ -14,6 +14,7 @@ function Landing() {
         <div id="logo-container">
           <img src={logoImg} alt="YouFit" />
           <h2>
+            <br />
             Plataforma desenvolvida para unir treinadores e alunos de academia
             de musculação.
           </h2>

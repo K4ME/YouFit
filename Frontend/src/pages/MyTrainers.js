@@ -1,37 +1,44 @@
 import React, { useEffect, useState } from "react";
-//import io from "socket.io-client";
 import { Link } from "react-router-dom";
 
-import "./Main.css";
+import "./MyTrainers.css";
 
 import logo from "../assets/YouFit.svg";
 import usuario from "../assets/usuario.svg";
-import like from "../assets/like.svg";
-import dislike from "../assets/dislike.svg";
 import whatsappIcon from "../assets/whatsapp.svg";
 
-//import itsamatch from "../assets/itsamatch.png";
 import api from "../services/api";
 
 export default function Main({ match }) {
   const [trainers, setTrainers] = useState([]);
-  const [likes, setLikes] = useState([like]);
 
   useEffect(() => {
-    async function loadTrainers() {
-      const response = await api.get(`/user/${match.params.id}`, {});
+    async function loadTtrainers() {
+      const response = await api.get(
+        `/trainer/mytrainer/${match.params.id}`,
+        {}
+      );
       if (trainers == "") setTrainers(response.data);
-      console.log(response.data);
     }
-    loadTrainers();
+    loadTtrainers();
   }, []);
 
   async function handleLike(id) {
-    await api.put(`/trainer/addstudent/${match.params.id}`, {
-      id: `${id}`,
+    await api.put(`/user/likes/${id}`, {
+      studentId: match.params.id,
     });
 
-    setLikes(dislike);
+    //setTrainersId(id);
+    setTrainers(trainers.filter((trainers) => trainers.id !== id));
+  }
+
+  async function handleDislike(id) {
+    await api.put(`/user/dislikes/${id}`, {
+      studentId: match.params.id,
+    });
+
+    //setTrainersId(id);
+    setTrainers(trainers.filter((trainer) => trainer.id !== id));
   }
 
   return (
@@ -49,6 +56,7 @@ export default function Main({ match }) {
               ) : (
                 <img src={trainer.avatar} alt={trainer.name} />
               )}
+
               <footer>
                 <strong>{trainer.name}</strong>
                 <p>{trainer.biograph}</p>
@@ -63,31 +71,13 @@ export default function Main({ match }) {
                     <img src={whatsappIcon} alt="Whatsapp" />
                   </a>
                 </button>
-
-                <button type="button" onClick={() => handleLike(trainer.id)}>
-                  <img src={likes} alt="Like" />
-                </button>
               </div>
             </li>
           ))}
         </ul>
       ) : (
-        <div className="empty">Sem Alunos no momento!</div>
+        <div className="empty">Sem Trainadores no momento!</div>
       )}
-
-      {/*matchDev && (
-        <div className="match-container">
-          <img src={itsamatch} alt="" />
-
-          <img className="avatar" src={matchDev.avatar} alt="" />
-          <strong>{matchDev.name}</strong>
-          <p>{matchDev.bio}</p>
-
-          <button type="button" onClick={() => setMatchDev(false)}>
-            Fechar
-          </button>
-        </div>
-      )*/}
     </div>
   );
 }

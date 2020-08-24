@@ -11,6 +11,7 @@ router.post("/create", async (req, res) => {
   try {
     const data = JSON.parse(await readFile(global.fileName, "utf8"));
     const {
+      avatar,
       name,
       email,
       password,
@@ -22,6 +23,7 @@ router.post("/create", async (req, res) => {
 
     let user = {
       id: data.nextId++,
+      avatar,
       name,
       email,
       password,
@@ -128,6 +130,7 @@ router.put("/update/:id/", async (req, res) => {
   try {
     const data = JSON.parse(await readFile(global.fileName, "utf8"));
     const {
+      avatar,
       name,
       email,
       password,
@@ -143,6 +146,7 @@ router.put("/update/:id/", async (req, res) => {
 
     let newUser = {
       id: data.user[userId].id,
+      avatar,
       name,
       email,
       password,
@@ -215,6 +219,7 @@ router.put("/likes/:id", async (req, res) => {
 
     let newUser = {
       id: data.user[studentId - 1].id,
+      avatar: data.user[studentId - 1].avatar,
       name: data.user[studentId - 1].name,
       email: data.user[studentId - 1].email,
       password: data.user[studentId - 1].password,
@@ -259,6 +264,7 @@ router.put("/dislikes/:id", async (req, res) => {
 
     let newUser = {
       id: data.user[studentId - 1].id,
+      avatar: data.user[studentId - 1].avatar,
       name: data.user[studentId - 1].name,
       email: data.user[studentId - 1].email,
       password: data.user[studentId - 1].password,

@@ -5,6 +5,7 @@ import Login from "./pages/Login.js";
 import LoginTrainer from "./pages/LoginTrainer.js";
 import Main from "./pages/Main.js";
 import MainTrainer from "./pages/MainTrainer.js";
+import MyTrainers from "./pages/MyTrainers.js";
 import Register from "./pages/Register.js";
 import RegisterTrainer from "./pages/RegisterTrainer.js";
 import Landing from "./pages/Landing.js";
@@ -17,6 +18,7 @@ export default function Routes() {
       <Route path="/loginTrainer" component={LoginTrainer} />
       <Route path="/main/:id" component={Main} />
       <Route path="/mainTrainer/:id" component={MainTrainer} />
+      <Route path="/myTrainers/:id" component={MyTrainers} />
       <Route path="/register" component={Register} />
       <Route path="/registerTrainer" component={RegisterTrainer} />
     </BrowserRouter>

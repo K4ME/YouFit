@@ -10,10 +10,11 @@ const readFile = promisify(fs.readFile);
 router.post("/create", async (req, res) => {
   try {
     const data = JSON.parse(await readFile(global.fileName, "utf8"));
-    const { name, email, password, phone, adress, biograph } = req.body;
+    const { avatar, name, email, password, phone, adress, biograph } = req.body;
 
     let trainer = {
       id: data.nextTrainerId++,
+      avatar,
       name,
       email,
       password,
@@ -127,6 +128,7 @@ router.put("/update/:id/", async (req, res) => {
   try {
     const data = JSON.parse(await readFile(global.fileName, "utf8"));
     const {
+      avatar,
       name,
       email,
       password,
@@ -141,6 +143,7 @@ router.put("/update/:id/", async (req, res) => {
 
     let newtrainer = {
       id: data.trainer[trainerId].id,
+      avatar,
       name,
       email,
       password,
@@ -166,7 +169,7 @@ router.put("/update/:id/", async (req, res) => {
 router.put("/addstudent/:id/", async (req, res) => {
   try {
     const data = JSON.parse(await readFile(global.fileName, "utf8"));
-    const { students } = req.body;
+    const { id } = req.body;
 
     let trainerId = req.params.id - 1;
 
@@ -174,21 +177,16 @@ router.put("/addstudent/:id/", async (req, res) => {
       (us) => us.id === parseInt(req.params.id, 10)
     );
 
-    console.log("---------- trainer" + JSON.stringify(oldTrainer[0].students));
-
     if (oldTrainer[0].students === undefined) {
-      oldTrainer[0].students = students;
-      console.log("student " + oldTrainer.students);
+      oldTrainer[0].students = id;
     } else {
       let size = oldTrainer[0].students.length;
-      oldTrainer[0].students[size] = students;
-      console.log(
-        "-------- trainer.students: " + JSON.stringify(oldTrainer[0].students)
-      );
+      oldTrainer[0].students[size] = id;
     }
 
     let newtrainer = {
       id: data.trainer[trainerId].id,
+      avatar: data.trainer[trainerId].avatar,
       name: data.trainer[trainerId].name,
       email: data.trainer[trainerId].email,
       password: data.trainer[trainerId].password,
@@ -204,7 +202,9 @@ router.put("/addstudent/:id/", async (req, res) => {
 
     res.end();
 
-    logger.info(`PUT /trainer/update/ - " ${JSON.stringify(newtrainer)}`);
+    logger.info(
+      `PUT /trainer/addstudent/:id - " ${JSON.stringify(newtrainer)}`
+    );
   } catch (err) {
     res.status(400).send({ error: err.message });
   }
@@ -232,6 +232,38 @@ router.post("/login", async (req, res) => {
       res.send(trainerId);
     }
     logger.info(`GET /user/login - " ${email - password}`);
+  } catch (err) {
+    res.status(400).send({ error: err.message });
+  }
+});
+
+//mostrar trainadores que deram like no aluno
+router.get("/mytrainer/:id", async (req, res) => {
+  try {
+    const data = JSON.parse(await readFile(global.fileName, "utf8"));
+    const dataTrainers = data.trainer;
+    delete dataTrainers.nextId;
+    delete dataTrainers.nextTrainerId;
+
+    const idReq = parseInt(req.params.id, 10); //id aluno
+
+    let treinadores = [];
+
+    function imprimir(item, indice) {
+      for (var i = 0; i < item.students.length; i++) {
+        if (idReq == item.students[i]) {
+          if (treinadores == null) treinadores = [dataTrainers[indice]];
+          if (treinadores != null)
+            treinadores = [...treinadores, dataTrainers[indice]];
+        }
+      }
+    }
+
+    dataTrainers.forEach(imprimir);
+
+    res.send(treinadores);
+
+    logger.info("GET /trainer/mytrainer/:id");
   } catch (err) {
     res.status(400).send({ error: err.message });
   }

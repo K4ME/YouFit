@@ -69,11 +69,20 @@ export default function Main({ match }) {
         <img src={logo} alt="Logo YouFit" />
       </Link>
 
+      <Link to={`/myTrainers/${match.params.id}`}>
+        <button type="button">ver treinadores</button>
+      </Link>
+
       {trainers.length > 0 ? (
         <ul>
           {trainers.map((trainer) => (
             <li key={trainer.id}>
-              <img src={usuario} alt={trainer.name} />
+              {trainer.avatar == "" ? (
+                <img src={usuario} alt={trainer.name} />
+              ) : (
+                <img src={trainer.avatar} alt={trainer.name} />
+              )}
+
               <footer>
                 <strong>{trainer.name}</strong>
                 <p>{trainer.biograph}</p>
