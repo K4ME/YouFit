@@ -11,7 +11,7 @@
 ## Web Screenshot
 
 <p align="center" >
-<img src="landing.PNG" alt="web-landing" width="500"/> 
+<img src="landing.PNG" alt="web-landing" width="360"/>  <img src="trainer.PNG" alt="web-landing" width="360"/> 
 </p>
 
 ## 🛠 Tecnologias

@@ -310,3 +310,5 @@
 2020-08-26T00:14:37.035Z [YouFit] info: GET /user/login - " NaN
 2020-08-26T00:14:37.107Z [YouFit] info: GET /trainer/:id
 2020-08-26T00:14:41.141Z [YouFit] info: GET /trainer/mytrainer/:id
+2020-08-26T01:10:37.423Z [YouFit] info: API started!
+2020-08-26T01:11:55.302Z [YouFit] info: GET /:id
