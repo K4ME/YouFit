@@ -10,11 +10,8 @@
 
 ## Web Screenshot
 
-#<p align="center" >
-
-<!---
-![Alt text](./web-landing.png?raw=true "Web-landing")
-![Alt text](./web-list.png?raw=true "Web-list") -->
+<p align="center" >
+<img src="landing.PNG" alt="web-landing" width="500"/> 
 </p>
 
 ## 🛠 Tecnologias
@@ -65,16 +62,6 @@ $ yarn start
 ```
 
 ### Acesse: http://localhost:3000/ para ver o resultado.
-
-<br/>
-
-Lista de funcionalidades
-
-[x] Cadastro como Aluno.
-[x] Cadastro como Instrutor.
-[x] Listar todos Instrutores cadastrados.
-[ ] Mostrar Aluno Interessado pelo Instrutor.
-[ ] Mostrar Aceite do Instrutor para o Aluno.
 
 <br/>
 <br/>
