@@ -64,47 +64,52 @@ export default function Main({ match }) {
   }
 
   return (
-    <div className="main-container">
-      <Link to="/">
-        <img src={logo} alt="Logo YouFit" />
-      </Link>
-
+    <>
       <Link to={`/myTrainers/${match.params.id}`}>
-        <button type="button">ver treinadores</button>
+        <button className="btnTrainers" type="button">
+          Meus treinadores
+        </button>
       </Link>
+      <div className="main-container">
+        <Link to="/">
+          <img src={logo} alt="Logo YouFit" />
+        </Link>
 
-      {trainers.length > 0 ? (
-        <ul>
-          {trainers.map((trainer) => (
-            <li key={trainer.id}>
-              {trainer.avatar == "" ? (
-                <img src={usuario} alt={trainer.name} />
-              ) : (
-                <img src={trainer.avatar} alt={trainer.name} />
-              )}
+        {trainers.length > 0 ? (
+          <ul>
+            {trainers.map((trainer) => (
+              <li key={trainer.id}>
+                {trainer.avatar == "" ? (
+                  <img src={usuario} alt={trainer.name} />
+                ) : (
+                  <img src={trainer.avatar} alt={trainer.name} />
+                )}
 
-              <footer>
-                <strong>{trainer.name}</strong>
-                <p>{trainer.biograph}</p>
-              </footer>
+                <footer>
+                  <strong>{trainer.name}</strong>
+                  <p>{trainer.biograph}</p>
+                </footer>
 
-              <div className="buttons">
-                <button type="button" onClick={() => handleDislike(trainer.id)}>
-                  <img src={dislike} alt="Dislike" />
-                </button>
+                <div className="buttons">
+                  <button
+                    type="button"
+                    onClick={() => handleDislike(trainer.id)}
+                  >
+                    <img src={dislike} alt="Dislike" />
+                  </button>
 
-                <button type="button" onClick={() => handleLike(trainer.id)}>
-                  <img src={like} alt="Like" />
-                </button>
-              </div>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <div className="empty">Sem Trainers no momento!</div>
-      )}
+                  <button type="button" onClick={() => handleLike(trainer.id)}>
+                    <img src={like} alt="Like" />
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div className="empty">Sem Trainers no momento!</div>
+        )}
 
-      {/*matchDev && (
+        {/*matchDev && (
         <div className="match-container">
           <img src={itsamatch} alt="" />
 
@@ -117,6 +122,7 @@ export default function Main({ match }) {
           </button>
         </div>
       )*/}
-    </div>
+      </div>
+    </>
   );
 }
